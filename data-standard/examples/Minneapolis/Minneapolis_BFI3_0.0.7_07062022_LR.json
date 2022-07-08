@@ -28,20 +28,20 @@
 										"rear": 5,
 										"side": {
 											"interior": [5, "V1_1"],
-											"corner": [8, "V1_2"],
+											"corner": [8, "V1_2"], //JL: how is sidewalk and street info included? from gmaps or a different program? 
 										},
 									},
 								},
 								{
-									"base1":"topOfWall",
+									"base1":"topOfWall", //JL: 1- is base equivalent to floor? 2- base1 height and basemax unclear for single-family - only 7' difference?
 									"height": [28, "V1_X"]
 								},
 								{
 									"baseMax": "topOfRoof",
-									"height": [33, "V1_X"]
+									"height": [33, "V1_X"] 
 								}
 							],
-							"stories": {
+							"stories": { //JL: unclear about 'base' relationship with 'stories' 
 								"max":2.5, //what is a half story? and where should we hold its defintion?
 								"floors": [ //we should change this name to match the PlaceCode defintions
 									{
@@ -50,7 +50,7 @@
 										"maxHeight":14,
 										"minHeight":9,
 										"maxFloorStart":3.5,
-										"minFloorStart":-3.5
+										"minFloorStart":-3.5 //JL: just to confirm, the negative means a stepping down so the first level is a sublevel? 
 									},
 									{
 										"floorNum": 2,
